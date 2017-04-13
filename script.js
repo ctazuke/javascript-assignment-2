@@ -10,13 +10,6 @@ console.log(boxes.length);
 // Write a for loop to add a click event listener on all divs with class box.
 for (var i = 0; i < boxes.length; i++) {
   boxes[i].addEventListener("click", boxClicked);
-  if (boxes[i].className == "box") {
-    boxes[i].className = "clicked"
-    console.log("class of the box ["+i+"] changed to 'clicked'");
-  } else {
-    boxes[i].className = "class"
-    console.log("class of the box ["+i+"] changed back to 'class'");
-  }
 }
 
 function boxClicked() {
