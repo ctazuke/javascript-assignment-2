@@ -37,7 +37,7 @@ function boxClicked() {
     div.className = "clicked"
     console.log("class of the box ["+i+"] changed to 'clicked'");
   } else {
-    div.className = "class"
+    div.className = "box"
     console.log("class of the box ["+i+"] changed back to 'class'");
   }
 }
