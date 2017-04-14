@@ -7,41 +7,46 @@ console.log(random);
 var boxes = document.querySelectorAll(".box");
 console.log(boxes.length);
 
-// Write a for loop to add a click event listener on all divs with class box.
-for (var i = 0; i < boxes.length; i++) {
-  boxes[i].addEventListener("click", boxClicked);
-}
-
-function boxClicked() {
-  if (random < 201) {
+//Define a function bGColor()
+function bGColor() {
+  if (boxes.length < 201) {
     console.log("the number of boxes is less than 201");
-  } else if (random < 301) {
+  } else if (boxes.length < 301) {
     document.body.style.backgroundColor = "yellow"
-  } else if (random < 401) {
+  } else if (boxes.length < 401) {
     document.body.style.backgroundColor = "green"
-  } else if (random < 501) {
+  } else if (boxes.length < 501) {
     document.body.style.backgroundColor = "purple"
-  } else if (random < 601) {
+  } else if (boxes.length < 601) {
     document.body.style.backgroundColor = "orange"
-  } else if (random < 701) {
+  } else if (boxes.length < 701) {
     document.body.style.backgroundColor = "pink"
-  } else if (random < 801) {
+  } else if (boxes.length < 801) {
     document.body.style.backgroundColor = "black"
-  } else if (random < 901) {
+  } else if (boxes.length < 901) {
     document.body.style.backgroundColor = "brown"
   } else {
     document.body.style.backgroundColor = "blue"
   }
+}
 
-  if (div.className == "box") {
-    div.className = "clicked"
-    console.log("class of the box ["+i+"] changed to 'clicked'");
-  } else {
-    div.className = "box"
-    console.log("class of the box ["+i+"] changed back to 'class'");
-  }
+function boxClass() {
+  
+}
+
+// Write a for loop to add a click event listener on all divs with class box.
+for (var i = 0; i < boxes.length; i++) {
+  boxes[i].addEventListener("click", bGColor);
+  boxes[i].addEventListener("click", boxClass);
 }
 
 
+  // if (div.className == "box") {
+  //   div.className = "clicked"
+  //   console.log("class of the box ["+i+"] changed to 'clicked'");
+  // } else {
+  //   div.className = "box"
+  //   console.log("class of the box ["+i+"] changed back to 'class'");
+  // }
 
 
